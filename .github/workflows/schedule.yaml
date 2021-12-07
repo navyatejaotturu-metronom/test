@@ -1,9 +1,0 @@
-on:
-  schedule:
-    - cron:  '46 16 * * *'
-jobs:
- print:
-  runs-on: ubuntu-latest
-  steps:
-      - run: |
-          echo ${{ toJSON(github) }}
